@@ -1,0 +1,473 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+.header {
+    background-color: #000;
+    height: 70px;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    
+  }
+  
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .logo h1 {
+    color: #fff;  /* Color blanco para el texto */
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Estilos del Menú */
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    background-color: #000;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    top: 70px;
+    justify-content: center;
+  }
+  .nav-links a {
+    color: #777;  /* Texto blanco */
+    text-decoration: none;
+    font-size: 15px;
+    padding: 8px 16px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    background-color: #E30052;  /* Fondo rosado oscuro */
+    color: #fff;  /* Texto blanco al hacer hover */
+  }
+  
+  /* Estilos del Campo de Búsqueda */
+  .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  input[type="text"] {
+    padding: 8px 15px;
+    font-size: 16px;
+    border: 2px solid #444;
+    border-radius: 25px;
+    width: 200px;
+    color: #fff;
+    background-color: #333;  /* Fondo oscuro para el campo de búsqueda */
+    transition: all 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #ffb3b3; /* Borde rosado en foco */
+    outline: none;
+  }
+  
+  /* Botones de Registrar e Iniciar sesión */
+  .auth-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  .auth-buttons a {
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 25px;
+    background-color: #E30052;
+    color: #fff;  /* Texto rosado claro #ffb3b3*/
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+  }
+  .auth-buttons a:hover {
+    background-color: #ff4d4d;  /* Fondo rosado oscuro al hacer hover */
+    color: #fff;  /* Texto blanco cuando se hace hover */
+  }
+  
+  .auth-buttons a:active {
+    background-color: #ff4d4d;
+    color: #fff;
+  }
+  
+.main-content{
+    position: relative;
+    top: 100px;
+    
+}
+
+.hero{
+    height: 400px;
+    background-image: url(img/fonnd.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-container{
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes aparecerDesdeFondo {
+  0% {
+      transform: scale(0.1);
+      opacity: 0;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+.hero-title{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    width: 70%;
+    text-align: center;
+    color: #fff;
+    border: 1px #000;
+    animation: aparecerDesdeFondo 1s ease-out;
+}
+.hero-container a {
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 25px;
+    background-color: #E30052;
+    color: #fff;  /* Texto rosado claro #ffb3b3*/
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+.hero-container a:hover {
+    background-color: #ff4d4d;  /* Fondo rosado oscuro al hacer hover */
+    color: #fff;  /* Texto blanco cuando se hace hover */
+  }
+
+.about-content{
+    background-color: #ffff;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenido-about{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenido-about img{
+    width: 30%;
+}
+.about{
+    width: 65% ;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.about h2{
+    color: #E30052;
+    font-size: 24px;
+    font-weight: bold;
+    ;
+}
+.about p{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+/* Contenedor principal de los servicios */
+.our-services-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    background-color: #000;
+  }
+  
+  /* Título de los servicios */
+  .description-services a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #E30052;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    transition: color 0.3s ease;
+  }
+  
+  /* Descripción de los servicios */
+  .description-services p {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 0;
+    max-width: 800px;
+    line-height: 1.6;
+  }
+  
+  /* Contenedor de las tarjetas de servicio */
+  .card-service-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  /* Estilo de cada tarjeta de servicio */
+  .card-service {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  /* Asegura que los elementos se distribuyan de forma equitativa */
+    height: 100%;  /* Asegura que las tarjetas tengan una altura uniforme */
+  }
+  
+  /* Imagen de cada servicio */
+  .service-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Título y descripción de los servicios */
+  .card-service h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin: 10px 0;
+  }
+  
+  .card-service p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+    flex-grow: 1; /* Hace que el párrafo ocupe todo el espacio disponible */
+  }
+  
+  /* Botón de cada servicio */
+  .service-btn {
+    padding: 10px 20px;
+    background-color: #E30052;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: auto;  /* Asegura que el botón se mantenga al final de la tarjeta */
+  }
+  
+  /* Efecto hover en las tarjetas de servicio */
+  .card-service:hover {
+    transform: translateY(-5px); /* Eleva la tarjeta cuando se pasa el ratón */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Efecto hover del botón */
+  .service-btn:hover {
+    background-color: #ff4d4d; /* Cambia el color del botón al pasar el ratón */
+  }
+
+.product-container{
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 100%;
+  justify-content: center;
+}
+.content-products{
+    background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  margin: 0;
+}
+.title-product{
+    display: flex;
+    justify-content: center;
+    top: 100px;
+}
+.title-product a{
+    font-size: 24px;
+    font-weight: bold;
+    color: #E30052;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.product-card {
+    background-color: #fff;
+    width: 180px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px); /* Eleva la tarjeta cuando se pasa el ratón sobre ella */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  .product-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .product-info {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .product-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 0 0 10px;
+  }
+  /* Precio del producto */
+  .product-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #E30052;
+  }
+
+  .footer-section{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #000;
+    width: 100%;
+    color: #fff;
+    height: 300px;
+  }
+  .footer-content{
+    background-color: #000;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+    padding: 20px;
+  }
+.footer-logo img{
+    width: 100px;
+}
+.footer-bottom {
+    font-size: 10px;
+    text-align: center;
+}
+
+.footer-social {
+  padding: 30px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.container-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.bi {
+  color: #E30052;
+}
+
+.footer-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.ul-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.ul-links a  {
+  color: white;
+  text-decoration: none;
+}
