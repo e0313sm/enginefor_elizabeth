@@ -43,13 +43,12 @@ body{
   }
   
   .logo h1 {
-    color: #fff;  /* Color blanco para el texto */
+    color: #fff;  
     font-size: 26px;
     font-weight: bold;
     margin: 0;
   }
   
-  /* Estilos del Menú */
   .nav-links {
     display: flex;
     gap: 20px;
@@ -61,7 +60,7 @@ body{
     justify-content: center;
   }
   .nav-links a {
-    color: #777;  /* Texto blanco */
+    color: #777; 
     text-decoration: none;
     font-size: 15px;
     padding: 8px 16px;
@@ -70,11 +69,11 @@ body{
   }
   
   .nav-links a:hover {
-    background-color: #E30052;  /* Fondo rosado oscuro */
-    color: #fff;  /* Texto blanco al hacer hover */
+    background-color: #E30052;  
+    color: #fff;  
   }
   
-  /* Estilos del Campo de Búsqueda */
+ 
   .search-bar {
     display: flex;
     align-items: center;
@@ -87,16 +86,16 @@ body{
     border-radius: 25px;
     width: 200px;
     color: #fff;
-    background-color: #333;  /* Fondo oscuro para el campo de búsqueda */
+    background-color: #333;  
     transition: all 0.3s ease;
   }
   
   input[type="text"]:focus {
-    border-color: #ffb3b3; /* Borde rosado en foco */
+    border-color: #ffb3b3; 
     outline: none;
   }
   
-  /* Botones de Registrar e Iniciar sesión */
+  
   .auth-buttons {
     display: flex;
     gap: 10px;
@@ -106,18 +105,13 @@ body{
     font-size: 14px;
     border-radius: 25px;
     background-color: #E30052;
-    color: #fff;  /* Texto rosado claro #ffb3b3*/
+    color: #fff;  
     transition: background-color 0.3s, color 0.3s;
     text-decoration: none;
   }
   .auth-buttons a:hover {
-    background-color: #ff4d4d;  /* Fondo rosado oscuro al hacer hover */
-    color: #fff;  /* Texto blanco cuando se hace hover */
-  }
-  
-  .auth-buttons a:active {
-    background-color: #ff4d4d;
-    color: #fff;
+    background-color: #ff4d4d;  
+    color: #fff;  
   }
   
 .main-content{
