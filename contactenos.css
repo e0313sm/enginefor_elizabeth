@@ -1,4 +1,7 @@
-
+.main-content{
+    position: relative;
+    top: 100px;
+}
 
 .contact-section {
     display: flex;
@@ -19,7 +22,6 @@
     width: 100%;
     max-width: 450px;
     background-color: #ccc;
-    
 }
 @keyframes aparecerDesdeFondo {
     0% {
